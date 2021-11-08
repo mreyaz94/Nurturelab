@@ -26,11 +26,11 @@ SECRET_KEY = 'wqo&5mdp2ap0j1oy801*p3mz-2ui2i+iy30@#sq13p#)q8+2z$'
 # SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 
-ALLOWED_HOSTS = ["nurturapi.herokuapp.com"]
-# ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["nurturapi.herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -53,7 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.whiteNoiseMiddleware',
+    # 'whitenoise.middleware.whiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
